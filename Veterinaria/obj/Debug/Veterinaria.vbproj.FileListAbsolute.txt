@@ -1,0 +1,14 @@
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe.config
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\bin\Debug\Veterinaria.pdb
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\bin\Debug\Veterinaria.xml
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\obj\Debug\Veterinaria.vbprojAssemblyReference.cache
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Resources.resources
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\obj\Debug\Veterinaria.vbproj.GenerateResource.cache
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\obj\Debug\Veterinaria.vbproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\obj\Debug\Veterinaria.xml
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Inicio.resources
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\obj\Debug\Veterinaria.AltaPersona.resources
+C:\Users\Alumno\Desktop\Programmacion\Veterinaria\Veterinaria\obj\Debug\Veterinaria.AltaMascotas.resources
