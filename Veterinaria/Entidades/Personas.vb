@@ -1,8 +1,8 @@
 ﻿Public Class Personas
     Private _ci As Integer
     Private _nombre As String
+    Private _listatelefono As List(Of Integer)
     Private _direccion As String
-    Private _telefono As Integer
 
     Public Property Ci As Integer
         Get
@@ -22,6 +22,15 @@
         End Set
     End Property
 
+    Public Property Listatelefono As List(Of Integer)
+        Get
+            Return _listatelefono
+        End Get
+        Set(value As List(Of Integer))
+            _listatelefono = value
+        End Set
+    End Property
+
     Public Property Direccion As String
         Get
             Return _direccion
@@ -31,23 +40,13 @@
         End Set
     End Property
 
-    Public Property Telefono As Integer
-        Get
-            Return _telefono
-        End Get
-        Set(value As Integer)
-            _telefono = value
-        End Set
-    End Property
-
     Public Sub Personas()
 
     End Sub
-    Public Sub Personas(ci_ As Integer, nombre_ As String, direccion_ As String, telefono_ As Integer)
+    Public Sub Personas(ci_ As Integer, nombre_ As String, direccion_ As String, listatelefono_ As List(Of Integer))
         Ci = ci_
         Nombre = nombre_
         Direccion = direccion_
-        Telefono = telefono_
-
+        Listatelefono = listatelefono_
     End Sub
 End Class

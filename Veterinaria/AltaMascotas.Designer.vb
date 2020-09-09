@@ -31,13 +31,15 @@ Partial Class AltaMascotas
         Me.AñoNacimientoInput = New System.Windows.Forms.TextBox()
         Me.AceptarMascotabtn = New System.Windows.Forms.Button()
         Me.CancelarMascotabtn = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'AltaMascota
         '
         Me.AltaMascota.AutoSize = True
         Me.AltaMascota.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AltaMascota.Location = New System.Drawing.Point(268, 28)
+        Me.AltaMascota.Location = New System.Drawing.Point(12, 18)
         Me.AltaMascota.Name = "AltaMascota"
         Me.AltaMascota.Size = New System.Drawing.Size(236, 38)
         Me.AltaMascota.TabIndex = 0
@@ -46,7 +48,7 @@ Partial Class AltaMascotas
         'NombreMascotaText
         '
         Me.NombreMascotaText.AutoSize = True
-        Me.NombreMascotaText.Location = New System.Drawing.Point(249, 82)
+        Me.NombreMascotaText.Location = New System.Drawing.Point(16, 79)
         Me.NombreMascotaText.Name = "NombreMascotaText"
         Me.NombreMascotaText.Size = New System.Drawing.Size(47, 13)
         Me.NombreMascotaText.TabIndex = 1
@@ -54,22 +56,22 @@ Partial Class AltaMascotas
         '
         'NombreMascotaInput
         '
-        Me.NombreMascotaInput.Location = New System.Drawing.Point(316, 79)
+        Me.NombreMascotaInput.Location = New System.Drawing.Point(69, 76)
         Me.NombreMascotaInput.Name = "NombreMascotaInput"
         Me.NombreMascotaInput.Size = New System.Drawing.Size(202, 20)
         Me.NombreMascotaInput.TabIndex = 2
         '
         'CIDueñoInput
         '
-        Me.CIDueñoInput.Location = New System.Drawing.Point(330, 171)
+        Me.CIDueñoInput.Location = New System.Drawing.Point(97, 156)
         Me.CIDueñoInput.Name = "CIDueñoInput"
-        Me.CIDueñoInput.Size = New System.Drawing.Size(188, 20)
+        Me.CIDueñoInput.Size = New System.Drawing.Size(174, 20)
         Me.CIDueñoInput.TabIndex = 3
         '
         'CIDueñoText
         '
         Me.CIDueñoText.AutoSize = True
-        Me.CIDueñoText.Location = New System.Drawing.Point(249, 174)
+        Me.CIDueñoText.Location = New System.Drawing.Point(16, 159)
         Me.CIDueñoText.Name = "CIDueñoText"
         Me.CIDueñoText.Size = New System.Drawing.Size(75, 13)
         Me.CIDueñoText.TabIndex = 4
@@ -78,7 +80,7 @@ Partial Class AltaMascotas
         'AñoNacimientoText
         '
         Me.AñoNacimientoText.AutoSize = True
-        Me.AñoNacimientoText.Location = New System.Drawing.Point(249, 130)
+        Me.AñoNacimientoText.Location = New System.Drawing.Point(16, 119)
         Me.AñoNacimientoText.Name = "AñoNacimientoText"
         Me.AñoNacimientoText.Size = New System.Drawing.Size(100, 13)
         Me.AñoNacimientoText.TabIndex = 5
@@ -86,14 +88,14 @@ Partial Class AltaMascotas
         '
         'AñoNacimientoInput
         '
-        Me.AñoNacimientoInput.Location = New System.Drawing.Point(368, 130)
+        Me.AñoNacimientoInput.Location = New System.Drawing.Point(121, 116)
         Me.AñoNacimientoInput.Name = "AñoNacimientoInput"
         Me.AñoNacimientoInput.Size = New System.Drawing.Size(150, 20)
         Me.AñoNacimientoInput.TabIndex = 6
         '
         'AceptarMascotabtn
         '
-        Me.AceptarMascotabtn.Location = New System.Drawing.Point(431, 227)
+        Me.AceptarMascotabtn.Location = New System.Drawing.Point(184, 330)
         Me.AceptarMascotabtn.Name = "AceptarMascotabtn"
         Me.AceptarMascotabtn.Size = New System.Drawing.Size(87, 21)
         Me.AceptarMascotabtn.TabIndex = 7
@@ -102,18 +104,36 @@ Partial Class AltaMascotas
         '
         'CancelarMascotabtn
         '
-        Me.CancelarMascotabtn.Location = New System.Drawing.Point(252, 227)
+        Me.CancelarMascotabtn.Location = New System.Drawing.Point(19, 330)
         Me.CancelarMascotabtn.Name = "CancelarMascotabtn"
         Me.CancelarMascotabtn.Size = New System.Drawing.Size(86, 22)
         Me.CancelarMascotabtn.TabIndex = 8
         Me.CancelarMascotabtn.Text = "Cancelar"
         Me.CancelarMascotabtn.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(16, 201)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(21, 13)
+        Me.Label1.TabIndex = 9
+        Me.Label1.Text = "ID:"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(68, 198)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(203, 20)
+        Me.TextBox1.TabIndex = 10
+        '
         'AltaMascotas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(299, 367)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.CancelarMascotabtn)
         Me.Controls.Add(Me.AceptarMascotabtn)
         Me.Controls.Add(Me.AñoNacimientoInput)
@@ -139,4 +159,6 @@ Partial Class AltaMascotas
     Friend WithEvents AñoNacimientoInput As TextBox
     Friend WithEvents AceptarMascotabtn As Button
     Friend WithEvents CancelarMascotabtn As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents TextBox1 As TextBox
 End Class

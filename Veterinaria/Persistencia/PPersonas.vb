@@ -18,6 +18,22 @@
 
             resultado = cmd.ExecuteNonQuery()
 
+            If resultado = 1 Then
+                Dim i = 0
+                While i < personita.Listatelefono.Count
+                    cmd = New Npgsql.NpgsqlCommand()
+                    cmd.Connection = conexion
+                    cadenaComando = "insert into telefono(ci, telefono) values(@ci, @telefono)"
+                    cmd.CommandText = cadenaComando
+
+                    cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = personita.Ci
+                    cmd.Parameters.Add("@telefono", NpgsqlTypes.NpgsqlDbType.Integer).Value = personita.Listatelefono.Item(i)
+
+                    resultado = cmd.ExecuteNonQuery()
+                    i += 1
+                End While
+            End If
+
         Catch ex As Exception
             Throw ex
         Finally
