@@ -1,4 +1,5 @@
 ﻿Public Class AltaPersona
+    Private Const V As Boolean = True
     Dim listaTel As New List(Of Integer)
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles TitleAltaPersona.Click
 
@@ -31,7 +32,13 @@
     End Sub
 
     Private Sub Persona_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        TelefonoPersonaInput.Enabled = False
+        DireccionPersonaInput.Enabled = False
+        NombrePersonaInput.Enabled = False
+        lv_telefono.Enabled = False
+        AceptarPersonaBtn.Enabled = False
+        ModificarPersona.Enabled = False
+        CancelarPersonabtn.Enabled = False
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -64,5 +71,36 @@
             lv_telefono.Items.Add(listaTel.Item(iterador))
             iterador = iterador + 1
         End While
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles ModificarPersona.Click
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim cedula As Integer
+        cedula = CIPersonaInput.Text
+        Dim personaNueva As Personas
+        Dim logica As New LPersonas
+        personaNueva = logica.buscarPersona(cedula)
+
+        NombrePersonaInput.Enabled = True
+        DireccionPersonaInput.Enabled = True
+        TelefonoPersonaInput.Enabled = True
+        lv_telefono.Enabled = True
+
+        If IsNothing(personaNueva) Then
+            AceptarPersonaBtn.Enabled = True
+            CancelarPersonabtn.Enabled = True
+        Else
+            AceptarPersonaBtn.Enabled = True
+            ModificarPersona.Enabled = True
+            NombrePersonaInput.Text = personaNueva.Nombre
+            DireccionPersonaInput.Text = personaNueva.Direccion
+        End If
+    End Sub
+
+    Private Sub CIPersonaInput_TextChanged(sender As Object, e As EventArgs) Handles CIPersonaInput.TextChanged
+
     End Sub
 End Class

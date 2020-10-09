@@ -35,6 +35,8 @@ Partial Class AltaPersona
         Me.TelefonoPersonaText = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lv_telefono = New System.Windows.Forms.ListView()
+        Me.ModificarPersona = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TitleAltaPersona
@@ -98,7 +100,7 @@ Partial Class AltaPersona
         '
         'AceptarPersonaBtn
         '
-        Me.AceptarPersonaBtn.Location = New System.Drawing.Point(204, 368)
+        Me.AceptarPersonaBtn.Location = New System.Drawing.Point(288, 366)
         Me.AceptarPersonaBtn.Name = "AceptarPersonaBtn"
         Me.AceptarPersonaBtn.Size = New System.Drawing.Size(102, 27)
         Me.AceptarPersonaBtn.TabIndex = 7
@@ -149,11 +151,31 @@ Partial Class AltaPersona
         Me.lv_telefono.UseCompatibleStateImageBehavior = False
         Me.lv_telefono.View = System.Windows.Forms.View.List
         '
+        'ModificarPersona
+        '
+        Me.ModificarPersona.Location = New System.Drawing.Point(158, 369)
+        Me.ModificarPersona.Name = "ModificarPersona"
+        Me.ModificarPersona.Size = New System.Drawing.Size(91, 24)
+        Me.ModificarPersona.TabIndex = 13
+        Me.ModificarPersona.Text = "Modificar"
+        Me.ModificarPersona.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(308, 81)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(95, 22)
+        Me.Button3.TabIndex = 14
+        Me.Button3.Text = "Buscar"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'AltaPersona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(324, 422)
+        Me.ClientSize = New System.Drawing.Size(434, 422)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.ModificarPersona)
         Me.Controls.Add(Me.lv_telefono)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TelefonoPersonaText)
@@ -187,4 +209,6 @@ Partial Class AltaPersona
     Friend WithEvents TelefonoPersonaText As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents lv_telefono As ListView
+    Friend WithEvents ModificarPersona As Button
+    Friend WithEvents Button3 As Button
 End Class

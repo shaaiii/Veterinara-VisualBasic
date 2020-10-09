@@ -25,6 +25,9 @@ Partial Class Inicio
         Me.logo = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.PersonaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AltaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MascotaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -53,9 +56,28 @@ Partial Class Inicio
         '
         'PersonaToolStripMenuItem
         '
+        Me.PersonaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ModificarToolStripMenuItem, Me.AltaToolStripMenuItem, Me.ListarToolStripMenuItem})
         Me.PersonaToolStripMenuItem.Name = "PersonaToolStripMenuItem"
         Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.PersonaToolStripMenuItem.Text = "Persona"
+        '
+        'ModificarToolStripMenuItem
+        '
+        Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ModificarToolStripMenuItem.Text = "Modificar"
+        '
+        'AltaToolStripMenuItem
+        '
+        Me.AltaToolStripMenuItem.Name = "AltaToolStripMenuItem"
+        Me.AltaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AltaToolStripMenuItem.Text = "Alta"
+        '
+        'ListarToolStripMenuItem
+        '
+        Me.ListarToolStripMenuItem.Name = "ListarToolStripMenuItem"
+        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListarToolStripMenuItem.Text = "Listar"
         '
         'MascotaToolStripMenuItem
         '
@@ -109,4 +131,7 @@ Partial Class Inicio
     Friend WithEvents MascotaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents ModificarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AltaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ListarToolStripMenuItem As ToolStripMenuItem
 End Class

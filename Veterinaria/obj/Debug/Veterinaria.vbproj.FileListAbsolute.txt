@@ -144,3 +144,4 @@ C:\Users\Alumno\Desktop\Programmacion\Veterinara-VisualBasic\Veterinaria\bin\Deb
 C:\Users\Alumno\Desktop\Programmacion\Veterinara-VisualBasic\Veterinaria\obj\Debug\Veterinaria.Resources.resources
 C:\Users\Alumno\Desktop\Programmacion\Veterinara-VisualBasic\Veterinaria\obj\Debug\Veterinaria.vbproj.CoreCompileInputs.cache
 C:\Users\Alumno\Desktop\Programmacion\Veterinara-VisualBasic\Veterinaria\obj\Debug\Veterinaria.vbproj.CopyComplete
+C:\Users\Alumno\Desktop\Programmacion\Veterinara-VisualBasic\Veterinaria\obj\Debug\Veterinaria.ListarPersona.resources
