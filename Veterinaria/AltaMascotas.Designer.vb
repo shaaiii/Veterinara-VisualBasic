@@ -115,7 +115,7 @@ Partial Class AltaMascotas
         Me.CancelarMascotabtn.Name = "CancelarMascotabtn"
         Me.CancelarMascotabtn.Size = New System.Drawing.Size(90, 22)
         Me.CancelarMascotabtn.TabIndex = 8
-        Me.CancelarMascotabtn.Text = "Cancelar"
+        Me.CancelarMascotabtn.Text = "Limpiar"
         Me.CancelarMascotabtn.UseVisualStyleBackColor = True
         '
         'Label1

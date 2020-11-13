@@ -24,8 +24,8 @@
 
                 mascotaBuscada.Id = Convert.ToInt32(Lector(0).ToString)
                 mascotaBuscada.Nombre = Lector(1).ToString
-                mascotaBuscada.AñoNacimiento = Lector(2).ToString
-                mascotaBuscada.Dueño.Ci = Lector(3).ToString
+                mascotaBuscada.AñoNacimiento = Convert.ToInt32(Lector(2).ToString)
+                mascotaBuscada.Dueño.Ci = Convert.ToInt32(Lector(3).ToString)
             End If
 
         Catch ex As Exception

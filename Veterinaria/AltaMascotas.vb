@@ -31,7 +31,7 @@
 
             Dim logica As New LMascotas
             logica.AltaMascota(MascotaNueva)
-
+            MsgBox("Se agrego la mascota correctamente")
         Catch ex As Exception
             MsgBox("Hubo un error con los datos, " + ex.Message)
         End Try
@@ -44,8 +44,8 @@
     Private Sub buttonBuscarMascota_Click(sender As Object, e As EventArgs) Handles buttonBuscarMascota.Click
         Dim id As Integer
         id = idMascotaInput.Text
-        Dim mascotaNueva As Mascotas
-        Dim NuevoDueño As Personas
+        Dim mascotaNueva As New Mascotas()
+        Dim Dueño As New Personas()
         Dim logica As New LMascotas
         mascotaNueva = logica.buscarMascota(id)
 
@@ -59,9 +59,10 @@
         Else
             AceptarMascotabtn.Enabled = True
             ModificarMascota.Enabled = True
+            CancelarMascotabtn.Enabled = True
             NombreMascotaInput.Text = mascotaNueva.Nombre
             AñoNacimientoInput.Text = mascotaNueva.AñoNacimiento
-
+            CIDueñoInput.Enabled = False
         End If
     End Sub
 
@@ -86,6 +87,13 @@
 
         logica.ModificarMascota(nuevaMascota)
 
+        MsgBox("Se modifico la mascota correctamente")
 
+    End Sub
+
+    Private Sub CancelarMascotabtn_Click(sender As Object, e As EventArgs) Handles CancelarMascotabtn.Click
+        idMascotaInput.Clear()
+        NombreMascotaInput.Clear()
+        AñoNacimientoInput.Clear()
     End Sub
 End Class
