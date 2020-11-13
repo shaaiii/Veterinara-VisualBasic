@@ -22,67 +22,55 @@ Partial Class Inicio
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.logo = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.PersonaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AltaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MascotaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.AltaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.logo = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'logo
-        '
-        Me.logo.Image = Global.Veterinaria.My.Resources.Resources.unnamed
-        Me.logo.Location = New System.Drawing.Point(259, 104)
-        Me.logo.Name = "logo"
-        Me.logo.Size = New System.Drawing.Size(272, 272)
-        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.logo.TabIndex = 0
-        Me.logo.TabStop = False
         '
         'MenuStrip1
         '
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonaToolStripMenuItem, Me.MascotaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 25)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'PersonaToolStripMenuItem
         '
-        Me.PersonaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ModificarToolStripMenuItem, Me.AltaToolStripMenuItem, Me.ListarToolStripMenuItem})
+        Me.PersonaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaToolStripMenuItem, Me.ListarToolStripMenuItem})
+        Me.PersonaToolStripMenuItem.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PersonaToolStripMenuItem.Name = "PersonaToolStripMenuItem"
-        Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(67, 21)
         Me.PersonaToolStripMenuItem.Text = "Persona"
-        '
-        'ModificarToolStripMenuItem
-        '
-        Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ModificarToolStripMenuItem.Text = "Modificar"
         '
         'AltaToolStripMenuItem
         '
         Me.AltaToolStripMenuItem.Name = "AltaToolStripMenuItem"
-        Me.AltaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AltaToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.AltaToolStripMenuItem.Text = "Alta"
         '
         'ListarToolStripMenuItem
         '
         Me.ListarToolStripMenuItem.Name = "ListarToolStripMenuItem"
-        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.ListarToolStripMenuItem.Text = "Listar"
         '
         'MascotaToolStripMenuItem
         '
+        Me.MascotaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaToolStripMenuItem1, Me.ListarToolStripMenuItem1})
+        Me.MascotaToolStripMenuItem.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MascotaToolStripMenuItem.Name = "MascotaToolStripMenuItem"
-        Me.MascotaToolStripMenuItem.Size = New System.Drawing.Size(64, 20)
+        Me.MascotaToolStripMenuItem.Size = New System.Drawing.Size(73, 21)
         Me.MascotaToolStripMenuItem.Text = "Mascota"
         '
         'Label1
@@ -105,6 +93,28 @@ Partial Class Inicio
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "DOGS and CATS "
         '
+        'AltaToolStripMenuItem1
+        '
+        Me.AltaToolStripMenuItem1.Name = "AltaToolStripMenuItem1"
+        Me.AltaToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.AltaToolStripMenuItem1.Text = "Alta"
+        '
+        'ListarToolStripMenuItem1
+        '
+        Me.ListarToolStripMenuItem1.Name = "ListarToolStripMenuItem1"
+        Me.ListarToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.ListarToolStripMenuItem1.Text = "Listar"
+        '
+        'logo
+        '
+        Me.logo.Image = Global.Veterinaria.My.Resources.Resources.unnamed
+        Me.logo.Location = New System.Drawing.Point(259, 104)
+        Me.logo.Name = "logo"
+        Me.logo.Size = New System.Drawing.Size(272, 272)
+        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.logo.TabIndex = 0
+        Me.logo.TabStop = False
+        '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -117,9 +127,9 @@ Partial Class Inicio
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Inicio"
         Me.Text = "Inicio"
-        CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -131,7 +141,8 @@ Partial Class Inicio
     Friend WithEvents MascotaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents ModificarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AltaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AltaToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ListarToolStripMenuItem1 As ToolStripMenuItem
 End Class

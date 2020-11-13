@@ -10,25 +10,29 @@
     End Sub
 
     Private Sub AceptarPersonaBtn_Click(sender As Object, e As EventArgs) Handles AceptarPersonaBtn.Click
-        Dim personaNueva As Personas
+        Try
+            Dim personaNueva As New Personas
 
-        Dim NombrePersona As String
-        NombrePersona = NombrePersonaInput.Text
-        personaNueva.Nombre = NombrePersona
+            Dim NombrePersona As String
+            NombrePersona = NombrePersonaInput.Text
+            personaNueva.Nombre = NombrePersona
 
-        Dim CIPersona As Integer
-        CIPersona = CIPersonaInput.Text
-        personaNueva.Ci = CIPersona
+            Dim CIPersona As Integer
+            CIPersona = CIPersonaInput.Text
+            personaNueva.Ci = CIPersona
 
-        Dim DireccionPersona As String
-        DireccionPersona = DireccionPersonaInput.Text
-        personaNueva.Direccion = DireccionPersona
+            Dim DireccionPersona As String
+            DireccionPersona = DireccionPersonaInput.Text
+            personaNueva.Direccion = DireccionPersona
 
-        personaNueva.Listatelefono = listaTel
+            personaNueva.Listatelefono = listaTel
 
-        Dim logica As LPersonas
-        logica.altaPersona(personaNueva)
-
+            Dim logica As New LPersonas
+            logica.altaPersona(personaNueva)
+            MsgBox("Se creo correctamente el usuario ")
+        Catch ex As Exception
+            MsgBox("No se creo el usurario revise los datos" + ex.Message)
+        End Try
     End Sub
 
     Private Sub Persona_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -74,6 +78,29 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles ModificarPersona.Click
+        Try
+            Dim cedula As Integer
+            Dim nombre As String
+            Dim direccion As String
+
+            cedula = CIPersonaInput.Text
+            nombre = NombrePersonaInput.Text
+            direccion = DireccionPersonaInput.Text
+
+            Dim nuevaPersona As New Personas()
+            nuevaPersona.Ci = cedula
+            nuevaPersona.Nombre = nombre
+            nuevaPersona.Direccion = direccion
+            nuevaPersona.Listatelefono = listaTel
+
+
+            Dim logica As New LPersonas
+
+            logica.modificarPersona(nuevaPersona)
+            MsgBox("Se modifico el usuario ")
+        Catch ex As Exception
+            MsgBox("Revisa los datos " + ex.Message)
+        End Try
 
     End Sub
 
@@ -94,13 +121,38 @@
             CancelarPersonabtn.Enabled = True
         Else
             AceptarPersonaBtn.Enabled = True
+            CancelarPersonabtn.Enabled = True
             ModificarPersona.Enabled = True
             NombrePersonaInput.Text = personaNueva.Nombre
             DireccionPersonaInput.Text = personaNueva.Direccion
+
+            Dim i As Integer = 0
+            While i < personaNueva.Listatelefono.Count
+                lv_telefono.Items.Add(personaNueva.Listatelefono(i))
+                i = i + 1
+
+            End While
+
         End If
     End Sub
 
     Private Sub CIPersonaInput_TextChanged(sender As Object, e As EventArgs) Handles CIPersonaInput.TextChanged
 
+    End Sub
+
+    Private Sub CIPersonaText_Click(sender As Object, e As EventArgs) Handles CIPersonaText.Click
+
+    End Sub
+
+    Private Sub NombrePersonaText_Click(sender As Object, e As EventArgs) Handles NombrePersonaText.Click
+
+    End Sub
+
+    Private Sub CancelarPersonabtn_Click(sender As Object, e As EventArgs) Handles CancelarPersonabtn.Click
+        CIPersonaInput.Clear()
+        NombrePersonaInput.Clear()
+        DireccionPersonaInput.Clear()
+        TelefonoPersonaInput.Clear()
+        lv_telefono.Clear()
     End Sub
 End Class

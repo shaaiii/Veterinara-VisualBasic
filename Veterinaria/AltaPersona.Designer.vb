@@ -42,26 +42,27 @@ Partial Class AltaPersona
         'TitleAltaPersona
         '
         Me.TitleAltaPersona.AutoSize = True
-        Me.TitleAltaPersona.Font = New System.Drawing.Font("Comic Sans MS", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TitleAltaPersona.Font = New System.Drawing.Font("Century Gothic", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TitleAltaPersona.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.TitleAltaPersona.Location = New System.Drawing.Point(31, 22)
+        Me.TitleAltaPersona.Location = New System.Drawing.Point(89, 20)
         Me.TitleAltaPersona.Name = "TitleAltaPersona"
-        Me.TitleAltaPersona.Size = New System.Drawing.Size(243, 40)
+        Me.TitleAltaPersona.Size = New System.Drawing.Size(193, 36)
         Me.TitleAltaPersona.TabIndex = 0
-        Me.TitleAltaPersona.Text = "ALTA PERSONA"
+        Me.TitleAltaPersona.Text = "Alta Persona"
         '
         'NombrePersonaText
         '
         Me.NombrePersonaText.AutoSize = True
-        Me.NombrePersonaText.Location = New System.Drawing.Point(27, 118)
+        Me.NombrePersonaText.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NombrePersonaText.Location = New System.Drawing.Point(27, 115)
         Me.NombrePersonaText.Name = "NombrePersonaText"
-        Me.NombrePersonaText.Size = New System.Drawing.Size(47, 13)
+        Me.NombrePersonaText.Size = New System.Drawing.Size(54, 16)
         Me.NombrePersonaText.TabIndex = 1
         Me.NombrePersonaText.Text = "Nombre:"
         '
         'NombrePersonaInput
         '
-        Me.NombrePersonaInput.Location = New System.Drawing.Point(88, 115)
+        Me.NombrePersonaInput.Location = New System.Drawing.Point(87, 113)
         Me.NombrePersonaInput.Name = "NombrePersonaInput"
         Me.NombrePersonaInput.Size = New System.Drawing.Size(194, 20)
         Me.NombrePersonaInput.TabIndex = 2
@@ -75,7 +76,7 @@ Partial Class AltaPersona
         '
         'DireccionPersonaInput
         '
-        Me.DireccionPersonaInput.Location = New System.Drawing.Point(88, 153)
+        Me.DireccionPersonaInput.Location = New System.Drawing.Point(88, 151)
         Me.DireccionPersonaInput.Name = "DireccionPersonaInput"
         Me.DireccionPersonaInput.Size = New System.Drawing.Size(194, 20)
         Me.DireccionPersonaInput.TabIndex = 4
@@ -83,23 +84,26 @@ Partial Class AltaPersona
         'CIPersonaText
         '
         Me.CIPersonaText.AutoSize = True
-        Me.CIPersonaText.Location = New System.Drawing.Point(27, 86)
+        Me.CIPersonaText.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CIPersonaText.Location = New System.Drawing.Point(27, 84)
         Me.CIPersonaText.Name = "CIPersonaText"
-        Me.CIPersonaText.Size = New System.Drawing.Size(20, 13)
+        Me.CIPersonaText.Size = New System.Drawing.Size(23, 16)
         Me.CIPersonaText.TabIndex = 5
         Me.CIPersonaText.Text = "CI:"
         '
         'DireccionPersonaText
         '
         Me.DireccionPersonaText.AutoSize = True
-        Me.DireccionPersonaText.Location = New System.Drawing.Point(27, 156)
+        Me.DireccionPersonaText.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DireccionPersonaText.Location = New System.Drawing.Point(27, 153)
         Me.DireccionPersonaText.Name = "DireccionPersonaText"
-        Me.DireccionPersonaText.Size = New System.Drawing.Size(55, 13)
+        Me.DireccionPersonaText.Size = New System.Drawing.Size(61, 16)
         Me.DireccionPersonaText.TabIndex = 6
         Me.DireccionPersonaText.Text = "Direccion:"
         '
         'AceptarPersonaBtn
         '
+        Me.AceptarPersonaBtn.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AceptarPersonaBtn.Location = New System.Drawing.Point(288, 366)
         Me.AceptarPersonaBtn.Name = "AceptarPersonaBtn"
         Me.AceptarPersonaBtn.Size = New System.Drawing.Size(102, 27)
@@ -109,11 +113,12 @@ Partial Class AltaPersona
         '
         'CancelarPersonabtn
         '
+        Me.CancelarPersonabtn.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CancelarPersonabtn.Location = New System.Drawing.Point(12, 368)
         Me.CancelarPersonabtn.Name = "CancelarPersonabtn"
         Me.CancelarPersonabtn.Size = New System.Drawing.Size(101, 27)
         Me.CancelarPersonabtn.TabIndex = 8
-        Me.CancelarPersonabtn.Text = "Cancelar"
+        Me.CancelarPersonabtn.Text = "Limpiar"
         Me.CancelarPersonabtn.UseVisualStyleBackColor = True
         '
         'TelefonoPersonaInput
@@ -126,9 +131,10 @@ Partial Class AltaPersona
         'TelefonoPersonaText
         '
         Me.TelefonoPersonaText.AutoSize = True
-        Me.TelefonoPersonaText.Location = New System.Drawing.Point(27, 195)
+        Me.TelefonoPersonaText.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TelefonoPersonaText.Location = New System.Drawing.Point(30, 195)
         Me.TelefonoPersonaText.Name = "TelefonoPersonaText"
-        Me.TelefonoPersonaText.Size = New System.Drawing.Size(52, 13)
+        Me.TelefonoPersonaText.Size = New System.Drawing.Size(56, 16)
         Me.TelefonoPersonaText.TabIndex = 10
         Me.TelefonoPersonaText.Text = "Telefono:"
         '
@@ -153,6 +159,7 @@ Partial Class AltaPersona
         '
         'ModificarPersona
         '
+        Me.ModificarPersona.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ModificarPersona.Location = New System.Drawing.Point(158, 369)
         Me.ModificarPersona.Name = "ModificarPersona"
         Me.ModificarPersona.Size = New System.Drawing.Size(91, 24)
@@ -162,6 +169,7 @@ Partial Class AltaPersona
         '
         'Button3
         '
+        Me.Button3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(308, 81)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(95, 22)

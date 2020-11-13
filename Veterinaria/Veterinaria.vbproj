@@ -119,6 +119,12 @@
     </Compile>
     <Compile Include="Entidades\Mascotas.vb" />
     <Compile Include="Entidades\Personas.vb" />
+    <Compile Include="ListarMascotas.Designer.vb">
+      <DependentUpon>ListarMascotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListarMascotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ListarPersona.Designer.vb">
       <DependentUpon>ListarPersona.vb</DependentUpon>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AltaMascotas.resx">
       <DependentUpon>AltaMascotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarMascotas.resx">
+      <DependentUpon>ListarMascotas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListarPersona.resx">
       <DependentUpon>ListarPersona.vb</DependentUpon>

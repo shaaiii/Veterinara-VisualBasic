@@ -5,7 +5,7 @@
     End Sub
 
     Private Sub MascotaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MascotaToolStripMenuItem.Click
-        AltaMascotas.Show()
+
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
@@ -22,5 +22,13 @@
 
     Private Sub ListarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListarToolStripMenuItem.Click
         ListarPersona.ShowDialog()
+    End Sub
+
+    Private Sub AltaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AltaToolStripMenuItem1.Click
+        AltaMascotas.Show()
+    End Sub
+
+    Private Sub ListarToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ListarToolStripMenuItem1.Click
+        ListarMascotas.Show()
     End Sub
 End Class

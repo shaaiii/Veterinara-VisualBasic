@@ -7,8 +7,12 @@
         Dim persistencia As New PPersonas
         Return persistencia.BuscarPersona(CI)
     End Function
-    Public Function listarPersona(CI As Integer) As  List(Of Personas)
+    Public Function listarPersona() As List(Of Personas)
         Dim persistencia As New PPersonas
-        Return persistencia.listarPersona(CI)
+        Return persistencia.listarPersonas()
     End Function
+    Public Sub modificarPersona(persona As Personas)
+        Dim persistencia As New PPersonas
+        persistencia.modificarPersona(persona)
+    End Sub
 End Class
